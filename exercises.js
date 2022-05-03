@@ -124,7 +124,18 @@
   // ---------------------
   // Define a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
   // ---------------------
-
+  // This function finds words in a given array that are greater than a given length
+  // The parameters for this function are an array of words and an integer
+  // The output for this function is an array of words whose length is greater than the input integer
+  const filterLongWords = (array,num) => {
+	  let result = [];
+	  for (let entry of array) {
+		  if (entry.length > num) {
+			  result.push(entry);
+		  }
+	  }
+	  return result;
+  }
 
 
   // ---------------------
