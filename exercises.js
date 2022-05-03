@@ -71,14 +71,38 @@
   // ---------------------
   // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
   // ---------------------
+  // The function sum() will find the sum of all values in a given array, and the function multiply() will find the product of all values in a given array
+  // The parameter for each function is a single array of any length of numbers
+  // The output for sum() is a number that is the sum of the numbers in the input array. The output for multiply() is a number that is the product of the numbers in the input array.
+  const sum = (array) => {
+	  let result = 0;
+	  for (let entry of array) {
+		  result += entry;
+	  }
+	  return result;
+  }
 
-
+  const multiply = (array) => {
+	  let result = 1;
+	  for (let entry of array) {
+		  result *= entry;
+	  }
+	  return result;
+  }  
 
   // ---------------------
   // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
   // ---------------------
-
-
+  // This function reverses the order of the characters in a given string
+  // The parameter to this function is a string
+  // The output of this function is the reversed string
+  const reverse = (string) => {
+	  let result = "";
+	  for (let char of string) {
+		  result = char + result;
+	  }
+	  return result;
+  }
 
   // ---------------------
   // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
