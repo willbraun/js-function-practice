@@ -43,14 +43,29 @@
   // The parameter to this function is a single character that we want to test
   // The output is a boolean value stating whether or not this character is a vowel
   const isVowel = (char) => {
-	  let vowels = ['a','e','i','o','u'];
+	  const vowels = ['a','e','i','o','u'];
 	  return vowels.includes(char.toLowerCase());
   }
 
   // ---------------------
   // Write a function rovarspraket() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
   // ---------------------
-
+  // This function will take a string and return it with consonants replaced with '[consonant]+[letter o]+[consonant]'
+  // The paramater is any string
+  // The output is a new string that has the converted format
+  const rovarspraket = (string) => {
+	const consonants = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z'];  
+	let newString = "";
+	  for (let char of string) {
+		  if (consonants.includes(char.toLowerCase())) {
+			newString += (char + 'o' + char);
+		  }
+		  else {
+			newString += char;
+		  }
+	  }
+	return newString;
+  }
 
 
   // ---------------------
