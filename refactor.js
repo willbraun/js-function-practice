@@ -341,6 +341,17 @@ var callLater = function(timeout, callback) {
 
 // Put your answer below -------------------------
 
+var callLater = function(arg1,arg2) {
+	var callLaterInner = function(timeout, callback) {
+		setTimeout(callback, timeout);
+  	};
+	if (arguments.length === 2) {
+		callLaterInner(arg1,arg2);
+	}
+	else if (arguments.length === 1) {
+		callLaterInner(1000,arg1);
+	}
+}
 
 // -----------------------------------------------
 
