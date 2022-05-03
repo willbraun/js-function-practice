@@ -291,8 +291,13 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
+// If a parameter is not defined, the amount parameter is evaluated as 'undefined'
+// Javascript evaluates '0 + undefined' as NaN and sets the speed to that
+var speed = 0;
 
-
+var accelerate = function(amount = 1) {
+  speed += amount;
+};
 
 // -----------------------------------------------
 
