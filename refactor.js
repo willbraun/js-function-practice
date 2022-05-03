@@ -32,8 +32,9 @@ function doSomethingCool() {
 }
 
 // Put your answer below -------------------------
-
-
+const doSomethingCool = function() {
+	console.log("Something Cool");
+}
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -52,7 +53,11 @@ function sayHi() {
 setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
+const sayHi = function() {
+	alert("Hello, World!");
+}
 
+setTimeout(sayHi, 2000);
 
 // -----------------------------------------------
 
@@ -82,7 +87,9 @@ letter = "z";
 console.log("The letter is", letter);
 
 // Put your answer below -------------------------
-
+// C - z and then y. Letter is defined as x but not logged, then setTimeout is called so that in 1 second we will change the letter to y and log it.
+// During the time we are waiting, letter is changed to z and logged immediately
+// Then when setTimeout finishes, the letter is changed to y and logged to the console
 
 // -----------------------------------------------
 
@@ -104,7 +111,7 @@ var reverseStr = function(str) {
 };
 
 // Put your answer below -------------------------
-
+var reverseStr = (str) => str.split("").reverse().join("");
 
 
 // -----------------------------------------------
