@@ -5,8 +5,8 @@
   // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.
   // ---------------------
   // This function finds the greatest value of two numbers
-  // The parameters are the two numbers that you want to compare
-  // The result is the greater of the two numbers
+  // The parameters are the two numbers that you want to compare to see which one is the greatest
+  // The output is the greater of the two numbers
   const max = (num1, num2) => {
 	  if (num1 >= num2) {
 		  return num1;
@@ -20,7 +20,20 @@
   // ---------------------
   // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
   // ---------------------
-
+  // This function finds the greatest value of three numbers
+  // The parameters are three numbers that you want to compare to see which one is the greatest
+  // The output is the greatest of the three numbers
+  const maxOfThree = (num1, num2, num3) => {
+	  if (num1 >= num2 && num1 >= num3) {
+		  return num1;
+	  }
+	  else if (num2 >= num3) {
+		  return num2;
+	  }
+	  else {
+		  return num3;
+	  }
+  }
 
 
   // ---------------------
