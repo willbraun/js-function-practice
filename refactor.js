@@ -53,11 +53,9 @@ function sayHi() {
 setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
-const sayHi = function() {
+setTimeout(function() {
 	alert("Hello, World!");
-}
-
-setTimeout(sayHi, 2000);
+}, 2000);
 
 // -----------------------------------------------
 
@@ -231,15 +229,16 @@ var decreaseScore = function() {
 // Put your answer below -------------------------
 (function() {
 	var score = 0;
+
+  var increaseScore = function() {
+    score++;
+  };
+
+  var decreaseScore = function() {
+    score--;
+  };
+
 })();
-
-var increaseScore = function() {
-  score++;
-};
-
-var decreaseScore = function() {
-  score--;
-};
 
 
 // -----------------------------------------------
